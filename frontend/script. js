@@ -1,1 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-init: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: #000;
+    color: #00eaff;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle, #001f2e 0%, #000000 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.circle-hud {
+    width: 180px;
+    height: 180px;
+    border: 3px dashed #00eaff;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    animation: rotateHud 10s linear infinite;
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.4);
+}
+
+@keyframes rotateHud {
+    100% { transform: rotate(360deg); }
+}
+
+.image-container h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #00eaff;
+    margin-bottom: 10px;
+}
+
+.image-container p {
+    font-size: 1rem;
+    color: #70979d;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 60%;
+}
+
+.talk {
+    background: rgba(0, 234, 255, 0.1);
+    border: 2px solid #00eaff;
+    color: #00eaff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.2);
+}
+
+.talk:hover {
+    background: #00eaff;
+    color: #000;
+    box-shadow: 0 0 25px #00eaff;
+}
+
+.content {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
 
